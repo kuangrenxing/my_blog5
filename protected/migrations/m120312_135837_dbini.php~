@@ -1,0 +1,27 @@
+<?php
+
+class m120312_135837_dbini extends CDbMigration
+{
+	public function up()
+	{
+        $sql_bookmark="drop table if exists Bookmark";
+
+	}
+
+	public function down()
+	{
+		echo "m120312_135837_dbini does not support migration down.\n";
+		return false;
+	}
+
+	/*
+	// Use safeUp/ to do migration with transaction
+	public function safeUp()
+	{
+	}
+
+	public function safeDown()
+	{
+	}
+	*/
+}
