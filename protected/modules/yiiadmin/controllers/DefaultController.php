@@ -10,14 +10,7 @@ class DefaultController extends YAdminController
      */
 	public function actionIndex()
 	{
-		print_r(Yii::app()->getAssetManager());
-		echo Yii::getPathOfAlias('application.modules.yiiadmin.assets');
-		echo "<br>";
-		print_r($this->module);
-		$this->render('index',array(
-            'title'=>YiiadminModule::t('Администрирование'),
-            'models'=>$this->module->modelsList,
-        ));
+
 	}
 
 	public function actionError()

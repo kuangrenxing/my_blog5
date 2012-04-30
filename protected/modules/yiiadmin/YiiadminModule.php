@@ -119,7 +119,7 @@ class YiiadminModule extends CWebModule
         $dbType=$model->tableSchema->columns[$attribute]->dbType;
         
         $widget=$this->getAttributeWidget($attribute); 
-        
+       
         switch ($widget)
         {
             case 'textArea';

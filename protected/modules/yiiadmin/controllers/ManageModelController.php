@@ -30,24 +30,38 @@ class ManageModelController extends YAdminController
     {
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name);
-
+		//print_r($model->search());
         if (isset($_GET[get_class($model)]))
+        {
             $model->attributes=$_GET[get_class($model)];
-
+            echo $_GET[get_class($model)];
+        }
         $this->breadcrumbs=array(
                 $this->module->getModelNamePlural($model),
         );
 
         if (method_exists($model,'adminSearch'))
+        {
             $data1=$model->adminSearch();
+        }
         else
             $data1=array();
 
         $url_prefix='Yii::app()->createUrl("yiiadmin/manageModel/';
 
+        $column=implode(',', array_keys($model->tableSchema->columns));
+        $colu=array_keys($model->tableSchema->columns);
+        
+		$col=array('id','content','contentDisplay','status','createTime','authorName','email');
+        
+		
+		
+		
+		
         $data2=array(
             'id'=>'objects-grid',
             'dataProvider'=>$model->search(),
+        	//'dataProvider'=>Post::model()->findAll(),
             'filter'=>$model,
             'itemsCssClass'=>'table',
             'enablePagination'=>true,
@@ -67,6 +81,14 @@ class ManageModelController extends YAdminController
                 </div> 
             ',
             'columns'=>array(
+            		'id',
+//             		'content',
+//             		'contentDisplay',
+//             		'status',
+//             		'createTime',
+//             		'authorName',
+//             		'email',
+        
             array(
                 'class'=>'YiiAdminButtonColumn',
                 'updateButtonUrl'=>$url_prefix.'update",array("model_name"=>"'.get_class($model).'","pk"=>$data->primaryKey))',
@@ -78,7 +100,10 @@ class ManageModelController extends YAdminController
             ),
             ),
         ); 
-
+       // $model['dataProvider']=Post::model()->findAll();
+		//print_r($model->dataProvider);
+		//$model=Post::model()->findAll();
+		
         $listData=array_merge_recursive($data1,$data2); 
 
         if (Yii::app()->request->isAjaxRequest)

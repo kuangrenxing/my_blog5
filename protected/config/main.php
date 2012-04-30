@@ -33,8 +33,15 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
         'yiiadmin'=>array(
-            'password'=>'cc',
-        ),
+                'password'=>'cc',
+                'registerModels'=>array(
+                    'application.models.Contests',
+                    //'application.models.BlogPosts',
+                    'application.models.*',
+                ),
+                'excludeModels'=>array(),
+            ),
+		'admin',
 	
 	),
 

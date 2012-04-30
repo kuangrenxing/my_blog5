@@ -34,6 +34,8 @@
             foreach ($attributes as $attribute): 
             if( $model->tableSchema->columns[$attribute]->isPrimaryKey===true)
                 continue;
+         
+            //print_r(Comment::model()->tableSchema->columns['authorName']);
         ?>
         <div class="row <?php if($model->getError($attribute)) echo 'errors'; ?>">
             <div>
