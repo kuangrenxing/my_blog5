@@ -42,6 +42,7 @@ return array(
                 'excludeModels'=>array(),
             ),
 		'admin',
+		
 	
 	),
 
@@ -92,6 +93,9 @@ return array(
             'class'=>'CDbAuthMannage',
             'connectionID'=>'db',
         ),
+// 		'authManager'=>array(
+// 				'modules.srbac.components.SDbAuthManager'
+// 				),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
