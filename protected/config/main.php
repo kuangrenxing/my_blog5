@@ -10,7 +10,7 @@ return array(
 	'name'=>'Blog5',
 	'defaultController'=>'post',
 	'theme'=>'classic',
-	'language'=>'zh_cn',
+	'language'=>'en',
 		
 		
 
@@ -32,6 +32,9 @@ return array(
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+        'yiiadmin'=>array(
+            'password'=>'cc',
+        ),
 	
 	),
 

@@ -131,13 +131,13 @@ class PostController extends BaseController
 //     echo "<br>";
 //     echo dirname(__FILE__).DIRECTORY_SEPARATOR.'..';
         // echo $this->Test2;
-    	echo $this->setTest2('dd');
-    
-   
+    	//echo $this->setTest2('dd');
+    	//echo Yii::trace("Loading \"\" application component",'system.CModule');
+   //print_r(Yii::getLogger());
 
-    	
-    
-    	
+   //print_r(Yii::AuthManager);	
+   // print_r(Yii::app()->ClientScript);
+    	print_r(Yii::getPathOfAlias('ext'));
         
     } 
     public $Test2=45;  
