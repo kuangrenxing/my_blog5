@@ -8402,3 +8402,765 @@ Stack trace:
 #1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
 #2 /var/www/blog5/index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/outlines/drop-shadow.png".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/outlines/drop-shadow.png
+2012/04/30 23:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/zoomout.cur".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/zoomout.cur
+2012/04/30 23:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:25:20 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:25:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:26:11 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:26:12 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:26:13 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:27:47 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:27:47 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:27:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:27:48 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:27:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:27:48 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:27:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:31:43 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/
+2012/04/30 23:31:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:31:47 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:31:55 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:31:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:33:19 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:33:24 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:33:25 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:33:25 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:33:25 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:34:11 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:34:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:34:12 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:34:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:34:18 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:38:42 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:38:51 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:39:46 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/04/30 23:39:51 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/04/30 23:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 09:37:13 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 09:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 09:38:15 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 09:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:02:39 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:03:27 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:03:28 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:03:29 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:03:30 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 10:03:30 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 10:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 14:51:55 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 14:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 15:05:12 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('frontpage')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/frontpage
+2012/05/01 15:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 20:02:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiiblognew3.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /var/www/blog5/protected/modules/srbac/models/AuthItem.php (40)
+in /var/www/blog5/protected/modules/srbac/SrbacModule.php (248)
+in /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php (43)
+2012/05/01 20:02:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiiblognew3.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /var/www/blog5/protected/modules/srbac/models/AuthItem.php (40)
+in /var/www/blog5/protected/modules/srbac/SrbacModule.php (248)
+in /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php (43)
+2012/05/01 20:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 20:03:18 [error] [exception.CException] exception 'CException' with message 'Alias "modules.srbac.components.SDbAuthManager" is invalid. Make sure it points to an existing directory or file.' in /var/www/yii/framework/YiiBase.php:346
+Stack trace:
+#0 /var/www/yii/framework/YiiBase.php(201): YiiBase::import('modules.srbac.c...', true)
+#1 /var/www/yii/framework/base/CModule.php(371): YiiBase::createComponent(Array)
+#2 /var/www/yii/framework/base/CModule.php(86): CModule->getComponent('authManager')
+#3 /var/www/blog5/protected/modules/srbac/SrbacModule.php(244): CModule->__get('authManager')
+#4 /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#5 /var/www/yii/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('install')
+#9 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('srbac/authitem/...')
+#10 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#11 /var/www/blog5/index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/srbac/authitem/install
+2012/05/01 20:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2012/05/01 20:03:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiiblognew3.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /var/www/blog5/protected/modules/srbac/models/AuthItem.php (40)
+in /var/www/blog5/protected/modules/srbac/SrbacModule.php (248)
+in /var/www/blog5/protected/modules/srbac/controllers/AuthitemController.php (43)
+2012/05/01 20:03:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico

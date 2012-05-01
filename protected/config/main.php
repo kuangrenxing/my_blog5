@@ -21,6 +21,8 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.srbac.controllers.SBaseController',
+			
 	),
 
 	'modules'=>array(
@@ -42,6 +44,50 @@ return array(
                 'excludeModels'=>array(),
             ),
 		'admin',
+		 'srbac' => array(
+			
+					         'userclass'=>'User',
+			
+					         'userid'=>'id',
+			
+					         'username'=>'username',
+			
+					         'debug'=>true,
+			
+					         'pageSize'=>10,
+			
+					         'superUser' =>'Authority',
+			
+					         'css'=>'srbac.css',
+			
+					         'layout'=>'application.views.layouts.main',
+			
+					         'notAuthorizedView'=>'srbac.views.authitem.unauthorized',
+			
+					         'alwaysAllowed'=>array('SiteLogin','SiteLogout','SiteIndex','SiteAdmin','SiteError', 'SiteContact'),
+			
+					         'userActions'=>array('Show','View','List'),
+			
+					         'listBoxNumberOfLines' => 15,
+			
+					         'imagesPath' => 'srbac.images',
+			
+					         'imagesPack'=>'noia',
+			
+					         'iconText'=>true,
+			
+					         'header'=>'srbac.views.authitem.header',
+			
+					         'footer'=>'srbac.views.authitem.footer',
+			
+					         'showHeader'=>true,
+			
+					         'showFooter'=>true,
+			
+					         'alwaysAllowedPath'=>'srbac.components',
+			
+					     ),
+			
 		
 	
 	),
@@ -83,19 +129,32 @@ return array(
          */
 		// uncomment the following to use a MySQL database
 		'db'=>array(
+			'class'=>'CDbConnection',
 			'connectionString' => 'mysql:host=localhost;dbname=yiiblognew3',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'public',
 			'charset' => 'utf8',
 		),
-        'authMannager'=>array(
-            'class'=>'CDbAuthMannage',
-            'connectionID'=>'db',
-        ),
-// 		'authManager'=>array(
-// 				'modules.srbac.components.SDbAuthManager'
-// 				),
+//         'authMannager'=>array(
+//             'class'=>'CDbAuthMannage',
+//             'connectionID'=>'db',
+//         ),
+	  'authManager'=>array(
+
+	         'class'=>'CDbAuthManager',
+
+	         'connectionID'=>'db',
+
+	         'itemTable'=>'items',
+
+	         'assignmentTable'=>'assignments',
+
+	         'itemChildTable'=>'itemchildren',
+
+	     ),
+			
+			
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
