@@ -40,15 +40,15 @@ class AuthitemController extends SBaseController {
    */
   protected function beforeAction($action) {
     
-    if (!$this->module->isInstalled() && $action->id != "install") {
-      $this->redirect(array("install"));
-      return false;
-    }
+//     if (!$this->module->isInstalled() && $action->id != "install") {
+//       $this->redirect(array("install"));
+//       return false;
+//     }
 
     if ($this->module->debug) {
       return true;
     }
-    if (Yii::app()->user->checkAccess(Helper::findModule('srbac')->superUser) ) {
+     if( Yii::app()->user->checkAccess(Helper::findModule('srbac')->superUser) || !Helper::isAuthorizer()) {
       return true;
     } else {
       parent::beforeAction($action);

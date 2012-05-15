@@ -129,7 +129,7 @@ class ManageModelController extends YAdminController
     {
         $model_name=(string)$_GET['model_name']; 
         $model=$this->module->loadModel($model_name);
-
+        //print_r($model->iterator);
         if (Yii::app()->request->isPostRequest)
         {
             if (isset($_POST[$model_name]))

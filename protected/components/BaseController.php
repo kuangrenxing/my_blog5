@@ -7,8 +7,9 @@ class BaseController extends CController
         if(!Yii::app()->user->isGuest)
         {
         	
-        	//echo Yii::app()->user->username.'||'.Yii::app()->user->password;die();
-            $identity=new UserIdentity(Yii::app()->user->username,Yii::app()->user->password);
+        	//echo Yii::app()->user->username.'||'.Yii::app()->user->password;
+        	//echo Yii::app()->user->status;
+        	$identity=new UserIdentity(Yii::app()->user->username,Yii::app()->user->password);
             $identity->authenticate(false);
             if($identity->errorCode!=0)
             {

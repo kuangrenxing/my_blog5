@@ -31,7 +31,7 @@ $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/ckeditor/ckeditor.js')
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>

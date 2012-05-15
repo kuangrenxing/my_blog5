@@ -45,7 +45,7 @@ class PostController extends BaseController
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','show','list','captcha','test','test1'),
+				'actions'=>array('elfinder','index','view','show','list','captcha','test','test1'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -125,7 +125,7 @@ class PostController extends BaseController
 //     	$row=$model->find('id=:id',array(':id'=>12));
 //     	print_r($row->title);
     	//print_r($model);
-        //$this->render('test');
+        $this->render('test');
 //         }
 //     	echo Yii::app()->getBasePath();
 //     echo "<br>";
@@ -137,7 +137,9 @@ class PostController extends BaseController
 
    //print_r(Yii::AuthManager);	
    // print_r(Yii::app()->ClientScript);
-    	print_r(Yii::getPathOfAlias('ext'));
+    	//print_r(Yii::getPathOfAlias('ext'));
+         //$post=new Post;
+         //echo Post::tableName();
         
     } 
     public $Test2=45;  
@@ -158,7 +160,12 @@ class PostController extends BaseController
     	return $f;
     }
     
-    
+    public function actionElfinder(){
+    	
+    	$model=new Post;
+    	$this->render('elfinder',
+    			array('model'=>$model));
+    }
     
     
     
@@ -259,10 +266,17 @@ class PostController extends BaseController
 	 */
 	public function actionCreate()
 	{
-		echo Yii::app()->user->status;
-		echo Yii::app()->user->id;
+// 		$params=array('board'=>$board, 'post'=>$post);
+// 		if(Yii::app()->user->checkAccess('postManaging',$params))
+// 		{
+// 			//管理这个帖子，上面的postManaging可以是task，也可以是operation
+// 		}
+		
+		//echo Yii::app()->user->status;
+		//echo Yii::app()->user->id;
+		//print_r(Yii::app()->user);
 		$model=new Post;
-
+$this->performAjaxValidation($model);
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

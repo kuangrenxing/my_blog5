@@ -44,6 +44,7 @@ return array(
                 'excludeModels'=>array(),
             ),
 		'admin',
+        'elfinder',
 		 'srbac' => array(
 			
 					         'userclass'=>'User',

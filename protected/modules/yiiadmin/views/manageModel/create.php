@@ -11,6 +11,7 @@
         // Атрибуты поиска нас не интерисуют.
         if ($rule['on']!='search')
             $attr_string.=$rule[0].',';
+        //print_r($model->rules());
     }
     
     // TODO: unset primaryKey;

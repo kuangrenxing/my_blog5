@@ -22,6 +22,8 @@ if ($thing instanceof A) {
 if ($thing instanceof B) {
 	echo 'B';
 }
+
+echo Post::tableName();
 ?>
 
 <script>

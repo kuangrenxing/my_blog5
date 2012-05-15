@@ -29,6 +29,7 @@ class Post extends CActiveRecord
     const STATUS_PENDING=3;
 
     public $content;
+    public $text;
     //public $title2;
     //public $content2;
 
