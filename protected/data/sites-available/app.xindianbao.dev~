@@ -1,0 +1,22 @@
+<VirtualHost *:80>
+
+ServerName app.xindianbao.dev
+DocumentRoot "/var/www/app/pepsi"
+Alias /da "/var/www/app/pepsi"
+
+
+<Directory "/var/www/app/pepsi">
+	Options Indexes FollowSymlinks
+	RewriteEngine on
+	RewriteBase /da 
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+ </Directory>
+
+ ErrorLog "/var/log/apache2/app-error_log"
+ CustomLog "/var/log/apache2/app-access_log" common
+</VirtualHost>

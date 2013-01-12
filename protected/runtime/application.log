@@ -1138,3 +1138,296 @@ Stack trace:
 #26 /var/www/test/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
 #27 /var/www/test/blog6/index.php(13): CApplication->run()
 #28 {main} REQUEST_URI=/test/blog6/
+2013/01/12 19:31:38 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/blog5/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/yii/framework/web/CAssetManager.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/CAssetManager.php(97): CAssetManager->setBasePath('/var/www/blog5/...')
+#1 /var/www/yii/framework/web/CAssetManager.php(176): CAssetManager->getBasePath()
+#2 /var/www/yii/framework/web/helpers/CHtml.php(1059): CAssetManager->publish('/var/www/yii/fr...', false)
+#3 /var/www/yii/framework/web/widgets/pagers/CLinkPager.php(193): CHtml::asset('/var/www/yii/fr...')
+#4 /var/www/yii/framework/web/widgets/pagers/CLinkPager.php(182): CLinkPager::registerCssFile(NULL)
+#5 /var/www/yii/framework/web/widgets/pagers/CLinkPager.php(97): CLinkPager->registerClientScript()
+#6 /var/www/yii/framework/web/CBaseController.php(166): CLinkPager->run()
+#7 /var/www/blog5/themes/classic/views/post/list.php(17): CBaseController->widget('CLinkPager', Array)
+#8 /var/www/yii/framework/web/CBaseController.php(119): require('/var/www/blog5/...')
+#9 /var/www/yii/framework/web/CBaseController.php(88): CBaseController->renderInternal('/var/www/blog5/...', Array, true)
+#10 /var/www/yii/framework/web/CController.php(866): CBaseController->renderFile('/var/www/blog5/...', Array, true)
+#11 /var/www/yii/framework/web/CController.php(779): CController->renderPartial('list', Array, true)
+#12 /var/www/blog5/protected/controllers/PostController.php(400): CController->render('list', Array)
+#13 [internal function]: PostController->actionList(0)
+#14 /var/www/yii/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#15 /var/www/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#16 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#23 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('')
+#25 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('')
+#26 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#27 /var/www/blog5/index.php(13): CApplication->run()
+#28 {main} REQUEST_URI=/
+2013/01/12 19:31:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/outlines/drop-shadow.png".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/zoomout.cur".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/zoomout.cur
+2013/01/12 19:31:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/outlines/drop-shadow.png".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "highslide/graphics/zoomout.cur".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('highslide/graph...')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/highslide/graphics/zoomout.cur
+2013/01/12 19:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('user/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/user/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('user/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/user/highslide/graphics/zoomout.cur
+2013/01/12 19:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('page/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/page/highslide/graphics/zoomout.cur
+2013/01/12 19:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('page/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/page/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('file/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/file/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('file/highslide/...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/file/highslide/graphics/zoomout.cur
+2013/01/12 19:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('category/highsl...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/category/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "highslide".' in /var/www/yii/framework/web/CController.php:477
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(262): CController->missingAction('highslide')
+#1 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('highslide')
+#2 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('category/highsl...')
+#3 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /var/www/blog5/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/category/highslide/graphics/zoomout.cur
+2013/01/12 19:31:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/PostController.php:204
+Stack trace:
+#0 /var/www/blog5/protected/controllers/PostController.php(183): PostController->loadPostSlug()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('post/show/slug/...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/post/show/slug/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/PostController.php:204
+Stack trace:
+#0 /var/www/blog5/protected/controllers/PostController.php(183): PostController->loadPostSlug()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('post/show/slug/...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/post/show/slug/highslide/graphics/zoomout.cur
+2013/01/12 19:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:43:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:43:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/UserController.php:397
+Stack trace:
+#0 /var/www/blog5/protected/controllers/UserController.php(97): UserController->loadUser()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): UserController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('user/show/id/hi...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/user/show/id/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:43:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/UserController.php:397
+Stack trace:
+#0 /var/www/blog5/protected/controllers/UserController.php(97): UserController->loadUser()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): UserController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('user/show/id/hi...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/user/show/id/highslide/graphics/zoomout.cur
+2013/01/12 19:43:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico
+2013/01/12 19:43:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/PostController.php:204
+Stack trace:
+#0 /var/www/blog5/protected/controllers/PostController.php(183): PostController->loadPostSlug()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('post/show/slug/...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/post/show/slug/highslide/graphics/outlines/drop-shadow.png
+2013/01/12 19:43:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does no exists.' in /var/www/blog5/protected/controllers/PostController.php:204
+Stack trace:
+#0 /var/www/blog5/protected/controllers/PostController.php(183): PostController->loadPostSlug()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(50): PostController->actionShow()
+#2 /var/www/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/yii/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/CController.php(283): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/yii/framework/web/CWebApplication.php(277): CController->run('show')
+#11 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('post/show/slug/...')
+#12 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /var/www/blog5/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/post/show/slug/highslide/graphics/zoomout.cur
+2013/01/12 19:43:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/yii/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('favicon.ico')
+#1 /var/www/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /var/www/blog5/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/favicon.ico

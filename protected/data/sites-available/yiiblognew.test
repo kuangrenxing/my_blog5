@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+    DocumentRoot "/var/www/yiiblognew3"
+    ServerName yiiblognew.test
+
+    <Directory "/var/www/yiiblognew3">
+        Options Indexes FollowSymLinks
+        RewriteEngine on
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+   # ErrorLog "/var/log/apache2/yiiblognew3_error_log"
+   # CustomLog "/var/log/apache2/yiiblognew3_access_log" common
+</VirtualHost>
